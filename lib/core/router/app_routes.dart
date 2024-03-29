@@ -10,8 +10,12 @@ final GoRouter appRoutes = GoRouter(
   initialLocation: AppRoutesNames.initialScreen,
   routes: [
     GoRoute(
-      path: AppRoutesNames.test,
-      builder: (context, state) => const Scaffold(),
+      path: AppRoutesNames.initialScreen,
+      builder: (context, state) => const Scaffold(
+        body: Center(
+          child: Text('Hello World!'),
+        )
+      ),
     )
   ],
 );
