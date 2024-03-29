@@ -11,10 +11,11 @@ void main() {
   initDependencies();
 
   runApp(
-    MultiBlocProvider(
-      providers: const [],
-      child: const AppTemplate(),
-    ),
+    const AppTemplate()
+    // MultiBlocProvider(
+    //   providers: const [],
+    //   child: const AppTemplate(),
+    // ),
   );
 }
 
